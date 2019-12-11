@@ -1,0 +1,25 @@
+server:
+  port: 8000
+spring:
+  datasource:
+    username: lancelot
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boost?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false
+  redis:
+    host: localhost
+    database: 0
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      username: lancelot
+      password: admin
+
+  security:
+
+    user:
+      name: lancelot
+      password: admin
+      roles: ADMIN
